@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBase"
     tools:context="com.inteligenciac.bi.bi.Game">
 
     <RelativeLayout
@@ -33,17 +34,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/btnHelp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Button" />
-
-                    <Button
+                    <ImageButton
                         android:id="@+id/bntChange"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -55,7 +49,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Button" />
-                    <Button
+                    <ImageButton
                         android:id="@+id/btnListen"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -67,69 +61,115 @@
                     android:id="@+id/txtQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="3"
                     android:fontFamily="serif-monospace"
                     android:text="TextView"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@android:color/background_light"
                     android:textSize="24sp"
                     android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnA"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnB"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnC"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnD"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnE"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnF"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Button"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/btnA"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                    android:textSize="8sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/btnB"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                    android:textSize="8sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/btnC"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                    android:textSize="8sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/btnD"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                    android:textSize="8sp"
-                    android:visibility="visible" />
-            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

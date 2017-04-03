@@ -7,21 +7,23 @@ package com.inteligenciac.bi.bi;
 public class Question {
 
     private String statement;
-    private String ans1;
-    private String ans2;
-    private String ans3;
-    private String ans4;
+    private Answer ans1;
+    private Answer ans2;
+    private Answer ans3;
+    private Answer ans4;
+    private Answer ans5;
+    private Answer ans6 ;
     private String category;
-    private  int correctAns;
 
-    public Question(String statement, String ans1, String ans2, String ans3, String ans4, String category, int correctAns) {
+    public Question(String statement, Answer ans1, Answer ans2, Answer ans3, Answer ans4, Answer ans5, Answer ans6, String category) {
         this.statement = statement;
         this.ans1 = ans1;
         this.ans2 = ans2;
         this.ans3 = ans3;
         this.ans4 = ans4;
+        this.ans5 = ans5;
+        this.ans6 = ans6;
         this.category = category;
-        this.correctAns = correctAns;
     }
 
     public String getStatement() {
@@ -32,36 +34,52 @@ public class Question {
         this.statement = statement;
     }
 
-    public String getAns1() {
+    public Answer getAns1() {
         return ans1;
     }
 
-    public void setAns1(String ans1) {
+    public void setAns1(Answer ans1) {
         this.ans1 = ans1;
     }
 
-    public String getAns2() {
+    public Answer getAns2() {
         return ans2;
     }
 
-    public void setAns2(String ans2) {
+    public void setAns2(Answer ans2) {
         this.ans2 = ans2;
     }
 
-    public String getAns3() {
+    public Answer getAns3() {
         return ans3;
     }
 
-    public void setAns3(String ans3) {
+    public void setAns3(Answer ans3) {
         this.ans3 = ans3;
     }
 
-    public String getAns4() {
+    public Answer getAns4() {
         return ans4;
     }
 
-    public void setAns4(String ans4) {
+    public void setAns4(Answer ans4) {
         this.ans4 = ans4;
+    }
+
+    public Answer getAns5() {
+        return ans5;
+    }
+
+    public void setAns5(Answer ans5) {
+        this.ans5 = ans5;
+    }
+
+    public Answer getAns6() {
+        return ans6;
+    }
+
+    public void setAns6(Answer ans6) {
+        this.ans6 = ans6;
     }
 
     public String getCategory() {
@@ -70,13 +88,5 @@ public class Question {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public int getCorrectAns() {
-        return correctAns;
-    }
-
-    public void setCorrectAns(int correctAns) {
-        this.correctAns = correctAns;
     }
 }

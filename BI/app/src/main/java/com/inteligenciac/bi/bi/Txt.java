@@ -48,8 +48,8 @@ public class Txt {
         Question newQuestion;
         String[]parts = text.split("-");
 
-        newQuestion = new Question(parts[0],parts[1],parts[2],parts[3],parts[4],parts[5],Integer.parseInt(parts[6]));
-        question.add(newQuestion);
+       // newQuestion = new Question(parts[0],parts[1],parts[2],parts[3],parts[4],parts[5],Integer.parseInt(parts[6]));
+      //  question.add(newQuestion);
 
     }
 
