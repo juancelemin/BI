@@ -2,7 +2,9 @@ package com.inteligenciac.bi.bi;
 
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,19 +17,22 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Random;
 
-public class Game extends AppCompatActivity implements View.OnClickListener {
+public class Game extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener {
 
     Button btnA, btnB, btnC, btnD,btnE, btnF;
     ImageButton btnListA, btnListB,btnListC,btnListD,btnListE,btnListF;
     TextView txtQuestion;
     ArrayList<Question> question  = new ArrayList<>();
     Question currentQuestion;
+    TextToSpeech tts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        tts = new TextToSpeech(this,this);
 
         btnA = (Button)findViewById(R.id.btnA);
         btnB = (Button)findViewById(R.id.btnB);
@@ -36,6 +41,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
         btnE = (Button)findViewById(R.id.btnE);
         btnF = (Button)findViewById(R.id.btnF);
 
+        btnListA = (ImageButton)findViewById(R.id.btnLisA);
 
 
 
@@ -47,7 +53,8 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
         btnD.setOnClickListener(this);
         btnE.setOnClickListener(this);
         btnF.setOnClickListener(this);
-        btnD.destroyDrawingCache();
+        btnD.setOnClickListener(this);
+        btnListA.setOnClickListener(this);
 
         getQuestions();
 
@@ -72,6 +79,9 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.btnD:
 
+                break;
+            case R.id.btnLisA:
+                hablar(currentQuestion.getAns1().getDescription());
                 break;
         }
 
@@ -150,7 +160,28 @@ public class Game extends AppCompatActivity implements View.OnClickListener {
         showQuestion(nextQuestion);
         currentQuestion = nextQuestion;
     }
+    public void hablar (String p){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tts.speak(p, TextToSpeech.QUEUE_FLUSH, null, null);
 
+            //Toast.makeText(this, "5.0", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            tts.speak(p, TextToSpeech.QUEUE_ADD, null);
+            //Toast.makeText(this, "4.4.4", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    @Override
+    public void onInit(int i) {
+        if (i == TextToSpeech.SUCCESS) {
+            //Setting speech Language
+            Locale P= new Locale("ES");
+            tts.setLanguage(P);
+            tts.setPitch(1);
+        }
+    }
 
 }
 

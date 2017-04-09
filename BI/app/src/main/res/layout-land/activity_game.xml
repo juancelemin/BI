@@ -34,20 +34,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/bntChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/audio"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="Button" />
 
                     <TextView
                         android:id="@+id/txtQuestion"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:fontFamily="serif-monospace"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:isScrollContainer="true"
                         android:text="TextView"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Button"
                         android:textColor="@android:color/background_light"
-                        android:textSize="24sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btnListen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/flecha"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="Button" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -61,11 +80,27 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.7"
                         android:orientation="vertical">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btnLisA"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/audioizq"
+                                android:backgroundTint="@android:color/background_light"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="8sp"
+                                android:visibility="visible"
+                                tools:background="@drawable/audioizq" />
 
                             <Button
                                 android:id="@+id/btnA"
@@ -74,6 +109,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="2"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -82,19 +118,6 @@
                                 android:textSize="8sp"
                                 android:visibility="visible" />
 
-                            <ImageButton
-                                android:id="@+id/btnLisA"
-                                style="@android:style/Widget.Button"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:background="@drawable/audio"
-                                android:backgroundTint="@android:color/background_light"
-                                android:text="Button"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                                android:textSize="8sp"
-                                android:visibility="visible" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -110,6 +133,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="2"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -124,7 +148,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
-                                android:background="@drawable/audio"
+                                android:background="@drawable/audioizq"
                                 android:backgroundTint="@android:color/background_light"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
@@ -139,6 +163,20 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
+                            <ImageButton
+                                android:id="@+id/btnLisC"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/audioizq"
+                                android:backgroundTint="@android:color/background_light"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
                             <Button
                                 android:id="@+id/btnC"
                                 style="@android:style/Widget.Button"
@@ -146,6 +184,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="2"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -154,19 +193,6 @@
                                 android:textSize="8sp"
                                 android:visibility="visible" />
 
-                            <ImageButton
-                                android:id="@+id/btnLisC"
-                                style="@android:style/Widget.Button"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:background="@drawable/audio"
-                                android:backgroundTint="@android:color/background_light"
-                                android:text="Button"
-                                android:textAlignment="viewStart"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                                android:textSize="8sp"
-                                android:visibility="visible" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -190,6 +216,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -220,21 +247,6 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <Button
-                                android:id="@+id/btnE"
-                                style="@android:style/Widget.Button"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:backgroundTint="@android:color/holo_blue_light"
-                                android:text="Button"
-                                android:textAlignment="viewStart"
-                                android:textAllCaps="false"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                                android:textColor="@android:color/background_light"
-                                android:textSize="8sp"
-                                android:visibility="visible" />
-
                             <ImageButton
                                 android:id="@+id/btnLisE"
                                 style="@android:style/Widget.Button"
@@ -249,8 +261,24 @@
                                 android:textSize="8sp"
                                 android:visibility="visible" />
 
+                            <Button
+                                android:id="@+id/btnE"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
 
-                            </LinearLayout>
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -265,6 +293,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -296,38 +325,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="10"
-                android:orientation="vertical">
-
-
-                <ImageButton
-                    android:id="@+id/bntChange"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/audio"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/btnTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <ImageButton
-                    android:id="@+id/btnListen"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/flecha"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:text="Button" />
-            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

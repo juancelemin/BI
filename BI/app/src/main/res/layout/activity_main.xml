@@ -17,23 +17,27 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/button2"
-            android:layout_weight="1"
-            android:text="Jugar!" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true"
-            android:layout_weight="1"
-            android:text="Instrucciones" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="Instrucciones"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="115dp" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="Jugar!"
+        tools:layout_editor_absoluteY="175dp"
+        tools:layout_editor_absoluteX="136dp" />
 
 </android.support.constraint.ConstraintLayout>
