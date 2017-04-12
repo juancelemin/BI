@@ -37,12 +37,12 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/bntChange"
+                        android:id="@+id/btnListen"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:background="@drawable/audio"
-                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="@drawable/onda"
+                        android:backgroundTint="@android:color/background_light"
                         android:text="Button" />
 
                     <TextView
@@ -59,14 +59,32 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <ImageButton
-                        android:id="@+id/btnListen"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:background="@drawable/flecha"
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:text="Button" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnChange"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/flecha"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:text="Button" />
+
+                        <Chronometer
+                            android:id="@+id/chronometer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -109,7 +127,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
-                                android:maxLines="2"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -133,7 +151,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
-                                android:maxLines="2"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -184,7 +202,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
-                                android:maxLines="2"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"

@@ -38,7 +38,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/bntChange"
+                        android:id="@+id/btnListen"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -47,15 +47,17 @@
                         android:text="Button" />
 
                     <Chronometer
-                        android:id="@+id/chronometer2"
+                        android:id="@+id/chronometer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:textAlignment="center"
-                        android:textSize="36sp" />
+                        android:textColor="@android:color/background_light"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
 
                     <ImageButton
-                        android:id="@+id/btnListen"
+                        android:id="@+id/btnChange"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -102,6 +104,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
                                 android:text="Button"
                                 android:textAlignment="viewStart"
                                 android:textAllCaps="false"
@@ -114,39 +117,72 @@
                                 android:id="@+id/btnLisA"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="4" />
+                                android:layout_weight="5"
+                                android:background="@drawable/notamusical" />
 
                         </LinearLayout>
 
-                        <Button
-                            android:id="@+id/btnB"
-                            style="@android:style/Widget.Button"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:backgroundTint="@android:color/holo_blue_light"
-                            android:text="Button"
-                            android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="8sp"
-                            android:visibility="visible" />
+                            android:orientation="horizontal">
 
-                        <Button
-                            android:id="@+id/btnC"
-                            style="@android:style/Widget.Button"
+                            <ImageButton
+                                android:id="@+id/btnLisB"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/nota2" />
+
+                            <Button
+                                android:id="@+id/btnB"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:backgroundTint="@android:color/holo_blue_light"
-                            android:text="Button"
-                            android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="8sp"
-                            android:visibility="visible" />
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnC"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                            <ImageButton
+                                android:id="@+id/btnLisC"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/nota2" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -156,50 +192,100 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <Button
-                            android:id="@+id/btnD"
-                            style="@android:style/Widget.Button"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:backgroundTint="@android:color/holo_blue_light"
-                            android:text="Button"
-                            android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="8sp"
-                            android:visibility="visible" />
+                            android:orientation="horizontal">
 
-                        <Button
-                            android:id="@+id/btnE"
-                            style="@android:style/Widget.Button"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:backgroundTint="@android:color/holo_blue_light"
-                            android:text="Button"
-                            android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="8sp"
-                            android:visibility="visible" />
+                            <ImageButton
+                                android:id="@+id/btnLisD"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/notamusical" />
 
-                        <Button
-                            android:id="@+id/btnF"
-                            style="@android:style/Widget.Button"
+                            <Button
+                                android:id="@+id/btnD"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:backgroundTint="@android:color/holo_blue_light"
-                            android:text="Button"
-                            android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="8sp"
-                            android:visibility="visible" />
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnE"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                            <ImageButton
+                                android:id="@+id/btnLisE"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/notamusical" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btnLisF"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/nota2" />
+
+                            <Button
+                                android:id="@+id/btnF"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:maxLines="4"
+                                android:text="Button"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

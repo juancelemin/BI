@@ -1,5 +1,6 @@
 package com.inteligenciac.bi.bi;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,11 +25,14 @@ import java.util.Random;
 public class Game extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener {
 
     Button btnA, btnB, btnC, btnD,btnE, btnF;
-    ImageButton btnListA, btnListB,btnListC,btnListD,btnListE,btnListF;
+    ImageButton btnListA, btnListB,btnListC,btnListD,btnListE,btnListF,btnListen;
     TextView txtQuestion;
+    TextToSpeech tts;
+
     ArrayList<Question> question  = new ArrayList<>();
     Question currentQuestion;
-    TextToSpeech tts;
+    ArrayList<Answer> answerGame = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +47,12 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         btnF = (Button)findViewById(R.id.btnF);
 
         btnListA = (ImageButton)findViewById(R.id.btnLisA);
-
+        btnListB = (ImageButton)findViewById(R.id.btnLisB);
+        btnListC = (ImageButton)findViewById(R.id.btnLisC);
+        btnListD = (ImageButton)findViewById(R.id.btnLisD);
+        btnListE = (ImageButton)findViewById(R.id.btnLisE);
+        btnListF = (ImageButton)findViewById(R.id.btnLisF);
+        btnListen = (ImageButton)findViewById(R.id.btnListen);
 
 
         txtQuestion = (TextView)findViewById(R.id.txtQuestion);
@@ -53,8 +63,17 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         btnD.setOnClickListener(this);
         btnE.setOnClickListener(this);
         btnF.setOnClickListener(this);
-        btnD.setOnClickListener(this);
+
+
         btnListA.setOnClickListener(this);
+        btnListB.setOnClickListener(this);
+        btnListC.setOnClickListener(this);
+        btnListD.setOnClickListener(this);
+        btnListE.setOnClickListener(this);
+        btnListF.setOnClickListener(this);
+        btnListen.setOnClickListener(this);
+
+
 
         getQuestions();
 
@@ -68,25 +87,82 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         contenedor.setBackgroundColor(color);
         switch (v.getId()){
 
+            case R.id.btnListen:
+                hablar(currentQuestion.getStatement());
+                break;
+
             case R.id.btnA:
+                currentQuestion.getAns1().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns1());
+
+                sendData();
 
                 break;
             case R.id.btnB:
+                currentQuestion.getAns2().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns2());
+                nextQuestion();
 
                 break;
             case R.id.btnC:
+                currentQuestion.getAns3().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns3());
 
                 break;
             case R.id.btnD:
+                currentQuestion.getAns4().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns4());
+
+                break;
+
+            case R.id.btnF:
+                currentQuestion.getAns5().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns5());
+
+                break;
+            case R.id.btnE:
+                currentQuestion.getAns6().setType(currentQuestion.getCategory());
+                answerGame.add(currentQuestion.getAns6());
 
                 break;
             case R.id.btnLisA:
                 hablar(currentQuestion.getAns1().getDescription());
                 break;
+            case R.id.btnLisB:
+                hablar(currentQuestion.getAns2().getDescription());
+                break;
+            case R.id.btnLisC:
+                hablar(currentQuestion.getAns3().getDescription());
+                break;
+            case R.id.btnLisD:
+                hablar(currentQuestion.getAns4().getDescription());
+                break;
+            case R.id.btnLisE:
+                hablar(currentQuestion.getAns5().getDescription());
+                break;
+            case R.id.btnLisF:
+                hablar(currentQuestion.getAns6().getDescription());
+                break;
         }
 
     }
 
+    public void sendData(){
+
+        //Toast.makeText(Game.this,answerGame.get(1).getCategory().toString()+"",Toast.LENGTH_SHORT).show();
+
+        ReportDataSet reportDataSet = new ReportDataSet(answerGame);
+
+        int p [] = reportDataSet.numberdatachart("Personas");
+       // Toast.makeText(Game.this,reportDataSet.getName()[3]+"",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(Game.this,Report.class);
+
+        intent.putParcelableArrayListExtra("Personas",answerGame);
+        //intent.putExtra("Personas",p);
+        startActivity(intent);
+
+
+    }
 
     private String txt (){
         String text = "";
@@ -121,8 +197,8 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
     private  Answer makeAnswer (String ans){
 
         String parts [] = ans.split(",,");
-        Answer answer = new Answer(parts[0],parts[1]);
-        txtQuestion.setText(parts[1]);
+        Answer answer = new Answer(parts[0].replace(" ",""),parts[1].replace(" ",""));
+        //txtQuestion.setText(parts[1]);
         //answer.setDescription();
        // answer.setCategory(parts[1]);
         return answer;

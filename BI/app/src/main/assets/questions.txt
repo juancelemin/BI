@@ -1,9 +1,9 @@
 ﻿Considera usted, qué su conocimiento sobre Business Intelligence (BI) es:
--a. Demasiado,,Inconsciente
--b. Mucho,,Táctico
+-a. Demasiado,,Omnipresente
+-b. Mucho,,Estratégico
 -c. Moderado (Algo),,Centrado
--d. Poco,,Estratégico
--e. Nada,,Omnipresente
+-d. Poco,,Táctico
+-e. Nada,,Inconsciente
 -BI,,BI-Personas_
 En el Poli, Business Intelligence (BI) es considerada como:
 -a. Una aplicación más.,,Inconsciente
@@ -12,6 +12,30 @@ En el Poli, Business Intelligence (BI) es considerada como:
 -d. Un conjunto de tecnologías y procesos, basados en la integración de la información disponible, que permite comprender y gestionar el desempeño actual y futuro de la Institución.,,Estratégico
 -e. Un conjunto de estrategias, herramientas y metodologías enfocadas en la administración y transformación de los datos en información, con el fin de crear conocimiento para apoyar la toma de decisiones.,,Omnipresente
 -BI,,BI-Personas_
+Según su percepción, Business Intelligence (BI):
+-a. No tengo conocimiento.,,Inconsciente
+-b. Ha superado mis expectativas.,,Omnipresente
+-c. Ha cumplido todas mis expectativas.,,Estratégico
+-d. Ha cumplido parcialmente mis expectativas.,,Centrado
+-e. No ha cumplido mis expectativas.,,Táctico
+-f. No sabe / No responde,,Inconsciente-Personas_
+De acuerdo a su percepción, La estrategia de Business Intelligence (BI) del Poli:
+-a. Hace parte de la cultura que maneja cada una de las áreas y procesos de la Institución.,,Omnipresente
+-b. Requiere involucrar a toda la Institución y se extiende a proveedores y aliados.,,Estratégico
+-c. Requiere sistemas que están centrados en algunas áreas.,,Centrado
+-d. Requiere involucrar a cada área de la Institución por separado.,,Táctico
+-e. No requiere involucrar a las áreas.,,Inconsciente
+-f. No sabe/ No responde.,,Inconsciente-Personas_
+Según su criterio, ¿Cuál es la percepción que tienen los altos directivos acerca de Business Intelligence (BI)?
+-a. Que la información es confiable y utilizada en diferentes áreas de la institución.,,Omnipresente
+-b. Que brinda información de confianza y es utilizada para tomar decisiones estratégicas.,,Estratégico
+-c. Que genera beneficios a la organización.,,Centrado
+-d. Que la calidad y consistencia de la información proporcionada no es adecuada, por lo tanto no apoyan el sistema.,,Táctico
+-e. Que hay otros temas de mayor relevancia en la Institución.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Personas_
+
+
+
 
 
 
