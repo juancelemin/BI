@@ -81,11 +81,11 @@
                             android:text="Proceso" />
 
                         <RadioButton
-                            android:id="@+id/rbTechnology"
+                            android:id="@+id/rbOther"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Technology" />
+                            android:text="other" />
 
                     </RadioGroup>
 

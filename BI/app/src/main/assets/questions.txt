@@ -19,22 +19,6 @@ Según su percepción, Business Intelligence (BI):
 -d. Ha cumplido parcialmente mis expectativas.,,Centrado
 -e. No ha cumplido mis expectativas.,,Táctico
 -f. No sabe / No responde,,Inconsciente-Personas_
-De acuerdo a su percepción, La estrategia de Business Intelligence (BI) del Poli:
--a. Hace parte de la cultura que maneja cada una de las áreas y procesos de la Institución.,,Omnipresente
--b. Requiere involucrar a toda la Institución y se extiende a proveedores y aliados.,,Estratégico
--c. Requiere sistemas que están centrados en algunas áreas.,,Centrado
--d. Requiere involucrar a cada área de la Institución por separado.,,Táctico
--e. No requiere involucrar a las áreas.,,Inconsciente
--f. No sabe/ No responde.,,Inconsciente-Personas_
-Según su criterio, ¿Cuál es la percepción que tienen los altos directivos acerca de Business Intelligence (BI)?
--a. Que la información es confiable y utilizada en diferentes áreas de la institución.,,Omnipresente
--b. Que brinda información de confianza y es utilizada para tomar decisiones estratégicas.,,Estratégico
--c. Que genera beneficios a la organización.,,Centrado
--d. Que la calidad y consistencia de la información proporcionada no es adecuada, por lo tanto no apoyan el sistema.,,Táctico
--e. Que hay otros temas de mayor relevancia en la Institución.,,Inconsciente
--f. No sabe / No responde.,,Inconsciente-Personas_
-
-
 
 
 
