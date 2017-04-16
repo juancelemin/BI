@@ -1,5 +1,6 @@
 package com.inteligenciac.bi.bi;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -86,6 +87,8 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
                 break;
 
             case R.id.btnA:
+                Intent intent = new Intent(Game.this,Report.class);
+                startActivity(intent);
 
                 break;
             case R.id.btnB:
