@@ -23,7 +23,7 @@ import java.util.Random;
 public class Game extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener {
 
     Button btnA, btnB, btnC, btnD,btnE, btnF;
-    ImageButton btnListA, btnListB,btnListC,btnListD,btnListE,btnListF;
+    ImageButton btnListA, btnListB,btnListC,btnListD,btnListE,btnListF,btnListen;
     TextView txtQuestion;
     ArrayList<Question> question  = new ArrayList<>();
     Question currentQuestion;
@@ -47,6 +47,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         btnListD = (ImageButton)findViewById(R.id.btnLisD);
         btnListE = (ImageButton)findViewById(R.id.btnLisE);
         btnListF = (ImageButton)findViewById(R.id.btnLisF);
+        btnListen = (ImageButton)findViewById(R.id.btnListen);
 
 
         txtQuestion = (TextView)findViewById(R.id.txtQuestion);
@@ -65,6 +66,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         btnListD.setOnClickListener(this);
         btnListE.setOnClickListener(this);
         btnListF.setOnClickListener(this);
+        btnListen.setOnClickListener(this);
 
 
 
@@ -79,6 +81,9 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         View contenedor = v.getRootView();
         contenedor.setBackgroundColor(color);
         switch (v.getId()){
+            case R.id.btnListen:
+                hablar(currentQuestion.getStatement());
+                break;
 
             case R.id.btnA:
 
