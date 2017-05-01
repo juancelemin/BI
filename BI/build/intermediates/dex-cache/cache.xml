@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\jguil\Desktop\BI\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cb1ce2913f9178e17fe8d03efa398e919520c327\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\75d082f844b86b4b2599468a1b99ade9c405d69e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_b7e680d79f7b2277019c54941bd28ae2a6438c06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\72508f832d278fc633d07b0c3242181163735373\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_c9b3593208eb950c61885adf8926dfffff65ea51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\da30ff6b38ae0d7a15c2161adaee229327902aa6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_06905521f98d214df49cfdb5284498942d8f1542.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\fcb8b4cca5faa313ff2292f7cc33d3fe64138ff5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_b24b9f07ef742e0f18929183ac80e9a115833b3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\fd918912098ebdcb2e5bc890cd2546bfc60d9b52\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_e215271fd2a3356b3943f2b8973dfabc53f3073e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\f300abf53556d498afde7c34708fb95790d02226\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_634e703fc7b23a617cb398d923432f64d546252f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\5a7e5eba9120d7d4e13f3f77effa68a4e0e723f2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_13afb16d30e9c26e1abd7b6655af5550c5b75ffe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_3d45c66a29cf4b1bc9334adf6eeb032f5edcec4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\625ac2a9b3479a107449616348da88ea7ae02207\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_a050bd962bdd1415debe7173e6fc6bcc691d5c92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_daa13eedb6f51318bae9f6eef07464848d86ac61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\913d30f6f8f21c2d920f5e2672d32dac125e3193\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_d64237e0dc21936bd7edae366eb98af701f8b8f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\8dfdf14912c352d95bbaf98e0fe95a7c578ce8f9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_150a9eb642f8e10f75ef74f81d2e62318683a9b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\5f0fdb1ca0be325bf9c45612df99433d30428aeb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_67cfafee5ad91bd28ce4b85ee936f66d12e71fa7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\91c659017bceda0672c0d1aa06591cf97598a804\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_d3656ac2051a80695af1397c61f90169cb5cd286.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jguil\.android\build-cache\93560f040a1301129ff33bd7314729a5e29e55c4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\pre-dexed\debug\classes_e91152fa4da6eb5fd120ab3e17a6f06a115b187d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jguil\Desktop\BI\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bea30629e003b5ca4850301d519990e1199af81e">
+        <dex dex="C:\Users\jguil\Desktop\BI\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_973bdd779a08bca673d547bb68020659956d4473\classes.dex" />
+    </item>
+
+</items>
