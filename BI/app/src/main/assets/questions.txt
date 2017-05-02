@@ -4,14 +4,14 @@
 -c. Moderado (Algo),,Centrado
 -d. Poco,,Táctico
 -e. Nada,,Inconsciente
--BI,,BI-Personas_
+-f. BI,,BI-Personas_
 En el Poli, Business Intelligence (BI) es considerada como:
 -a. Una aplicación más.,,Inconsciente
--b. Una herramienta que permite generar reportes.,,Táctico 
+-b. Una herramienta que permite generar reportes.,,Táctico
 -c. Una herramienta que integra los diferentes sistemas de información y permite gestionar el desempeño de la Institución.,,Centrado
 -d. Un conjunto de tecnologías y procesos, basados en la integración de la información disponible, que permite comprender y gestionar el desempeño actual y futuro de la Institución.,,Estratégico
 -e. Un conjunto de estrategias, herramientas y metodologías enfocadas en la administración y transformación de los datos en información, con el fin de crear conocimiento para apoyar la toma de decisiones.,,Omnipresente
--BI,,BI-Personas_
+-f. BI,,BI-Personas_
 Según su percepción, Business Intelligence (BI):
 -a. No tengo conocimiento.,,Inconsciente
 -b. Ha superado mis expectativas.,,Omnipresente
@@ -33,7 +33,76 @@ Según su criterio, ¿Cuál es la percepción que tienen los altos directivos ac
 -d. Que la calidad y consistencia de la información proporcionada no es adecuada, por lo tanto no apoyan el sistema.,,Táctico
 -e. Que hay otros temas de mayor relevancia en la Institución.,,Inconsciente
 -f. No sabe / No responde.,,Inconsciente-Personas_
-
+De acuerdo a su conocimiento, el Poli ****** utiliza un procedimiento de Busines Intelligence (BI) para la toma de decisiones dentro de la Institución.
+-a. Siempre.,,Omnipresente
+-b. Casi siempre.,,Estratégico
+-c. Ocasionalmente.,,Centrado
+-d. Casi nunca.,,Táctico
+-e. Nunca.,,Inconsciente
+-f. BI,,BI-Procesos_
+¿Con qué frecuencia considera usted que Business Intelligence (BI) debe proporcionar el acceso a proveedores y aliados a determinada información?
+-a. Siempre.,,Inconsciente
+-b. Casi siempre.,,Táctico
+-c. Ocasionalmente.,,Centrado
+-d. Casi nunca.,,Estratégico
+-e. Nunca.,,Omnipresente
+-f  BI,,BI-Procesos_
+Usted considera que en el Poli:
+-a. Los procesos proporcionan flexibilidad para adaptarse a los cambios rápidos del negocio.,,Omnipresente
+-b. La gestión de procesos se realiza basada en hechos (datos e información).,,Estratégico
+-c. Se han estandarizado los procesos de negocios y se han implementado mejores prácticas en BI.,,Centrado
+-d. Se conocen los procesos básicos de negocios.,,Táctico
+-e. No existen procesos de negocio.,,Inconsciente
+-f  BI,,BI-Procesos_
+Cree usted, ¿que los funcionarios del Poli deben aplicar los procedimientos de Business Intelligence (BI) para apoyar la toma de decisiones?
+-a. Totalmente de acuerdo.,,Omnipresente
+-b. De acuerdo.,,Estratégico
+-c. Ni de acuerdo ni en desacuerdo.,,Centrado
+-d. En desacuerdo.,,Táctico
+-e. Totalmente en desacuerdo.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Procesos_
+¿Con que frecuencia considera usted que en el Poli se implementan las mejores prácticas de Business Intelligence (BI)?
+-a. Siempre.,,Inconsciente
+-b. Casi siempre.,,Táctico
+-c. Ocasionalmente.,,Centrado
+-d. Casi nunca.,,Estratégico
+-e. Nunca.,,Omnipresente
+-f. No sabe / No responde.,,Inconsciente-Procesos_
+A nivel general, los indicadores del Poli:
+-a. Hacen parte de los resultados que están vinculados a objetivos concretos y medibles.,,Omnipresente
+-b. Están bajo una adecuada política de gestión de datos y métricas de calidad de datos.,,Estratégico
+-c. Existen pero presentan inconsistencias con los objetivos de las áreas de la Institución.,,Centrado
+-d. Están definidos y se emplean sólo al nivel de áreas.,,Táctico
+-e. No son claros y no están compartidos.,,Inconsciente
+-f. BI,,BI-Tecnologias_
+La Institución cuenta con indicadores financieros, de ventas, de procesos de negocio y de aprendizaje organizacional
+-a. Totalmente de acuerdo.,,Omnipresente
+-b. De acuerdo.,,Estratégico
+-c. Ni de acuerdo ni en desacuerdo.,,Centrado
+-d. En desacuerdo.,,Táctico
+-e. Totalmente en desacuerdo.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Tecnologias_
+¿Considera usted, que el Poli tiene automatizados los indicadores estratégicos (financieros, ventas, compras, entre otros) para medir la gestión de la Institución?
+-a. Totalmente de acuerdo.,,Omnipresente
+-b. De acuerdo.,,Estratégico
+-c. Ni de acuerdo ni en desacuerdo.,,Centrado
+-d. En desacuerdo.,,Táctico
+-e. Totalmente en desacuerdo.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Tecnologias_
+En el Poli Business Inteligence (BI), brinda información interna enriquecida por todas las partes interesadas
+-a. Totalmente de acuerdo.,,Omnipresente
+-b. De acuerdo.,,Estratégico
+-c. Ni de acuerdo ni en desacuerdo.,,Centrado
+-d. En desacuerdo.,,Táctico
+-e. Totalmente en desacuerdo.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Tecnologias_
+Los datos a los que puede acceder desde Business Intelligence (BI) se encuentran actualizados y con calidad
+-a. Totalmente de acuerdo.,,Omnipresente
+-b. De acuerdo.,,Estratégico
+-c. Ni de acuerdo ni en desacuerdo.,,Centrado
+-d. En desacuerdo.,,Táctico
+-e. Totalmente en desacuerdo.,,Inconsciente
+-f. No sabe / No responde.,,Inconsciente-Tecnologias_
 
 
 

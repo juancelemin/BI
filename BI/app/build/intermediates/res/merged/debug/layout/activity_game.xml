@@ -43,7 +43,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/audio"
-                        android:backgroundTint="@color/colorPrimary"
+                        android:backgroundTint="@android:color/background_light"
                         android:text="Button" />
 
                     <Chronometer
@@ -62,7 +62,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/flecha"
-                        android:backgroundTint="@color/colorPrimary"
+                        android:backgroundTint="@android:color/background_light"
                         android:text="Button" />
 
                 </LinearLayout>
@@ -126,7 +126,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="5"
-                                android:background="@drawable/notamusical" />
+                                android:background="@drawable/notamusical"
+                                android:scaleType="fitXY" />
 
                         </LinearLayout>
 

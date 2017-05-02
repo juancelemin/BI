@@ -31,6 +31,9 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
     RadioButton people;
     RadioButton process;
     RadioButton technology;
+    float[] numberPeop = new float[5];
+    float[] numberProc = new float[5];
+    float[] numberTecno = new float[5];
     ArrayList<Answer> data = new ArrayList<>();
 
     ImageButton exit;
@@ -73,65 +76,68 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
         //ReportDataSet r = new ReportDataSet(p);
         //int [] s = r.numberdatachart("Personas");
         //Toast.makeText(Report.this,s[0]+s[1]+s[2]+s[3]+s[4]+"",Toast.LENGTH_SHORT).show();
-        numberdatachart("Personas");
+        numberdatachart();
 
     }
 
 
-    public void numberdatachart(String category){
-        float[] number = new float[5];
-        float[] numberProc = new float[5];
-        float[] numberTecno = new float[5];
+    private void numberdatachart(){
+
         for (Answer p:data) {
-            if(category.equals("Personas")){
+            if(p.getType().equals("Procesos")){
                 //Toast.makeText(Report.this,p.getCategory()+" "+name[0],Toast.LENGTH_SHORT).show();
                 if(p.getCategory().contains(name[0])){
-                    //Toast.makeText(Report.this,p.getCategory()+""+name[0],Toast.LENGTH_LONG).show();
-                    number[0] = number[0] + 1;
+                    processA[0] = processA[0] + 1;
                 }else if(p.getCategory().contains(name[1])){
-                    number[1] = number[1] + 1;
+                    processA[1] = processA[1] + 1;
                 }else if(p.getCategory().contains(name[2])){
-                    number[2] = number[2] + 1;
+                    processA[2] = processA[2] + 1;
                 }else if(p.getCategory().contains(name[3])){
-                    number[3] = number[3] + 1;
+                    processA[3] = processA[3] + 1;
                 }else if(p.getCategory().contains(name[4])){
-                    number[4] = number[4] + 1;
+                    processA[4] = processA[4] + 1;
                 }
-            }else if(category.equals("Procesos")){
+                else{
+                    processA[4] = processA[4] + 1;
+                }
+            }else if(p.getType().equals("Personas")){
 
                 if(p.getCategory().contains(name[0])){
-                    numberProc[0] = number[0] + 1;
+                    peopleA[0] = peopleA[0] + 1;
                 }else if(p.getCategory().contains(name[1])){
-                    numberProc[1] = number[1] + 1;
+                    peopleA[1] = peopleA[1] + 1;
                 }else if(p.getCategory().contains(name[2])){
-                    numberProc[2] = number[2] + 1;
+                    peopleA[2] = peopleA[2] + 1;
                 }else if(p.getCategory().contains(name[3])){
-                    numberProc[3] = number[3] + 1;
+                    peopleA[3] = peopleA[3] + 1;
                 }else if(p.getCategory().contains(name[4])){
-                    numberProc[4] = number[4] + 1;
+                    peopleA[4] = peopleA[4] + 1;
+                }
+               else{
+                    peopleA[4] = peopleA[4] + 1;
                 }
             }
-            else if(category.equals("Tecnologias")){
+            else if(p.getType().equals("Tecnologias")){
 
                 if(p.getCategory().contains(name[0])){
-                    numberTecno[0] = number[0] + 1;
+                    technologyA[0] = technologyA[0] + 1;
                 }else if(p.getCategory().contains(name[1])){
-                    numberTecno[1] = number[1] + 1;
+                    technologyA[1] = technologyA[1] + 1;
                 }else if(p.getCategory().contains(name[2])){
-                    numberTecno[2] = number[2] + 1;
+                    technologyA[2] = technologyA[2] + 1;;
                 }else if(p.getCategory().contains(name[3])){
-                    numberTecno[3] = number[3] + 1;
+                    technologyA[3] = technologyA[3] + 1;
                 }else if(p.getCategory().contains(name[4])){
-                    numberTecno[4] = number[4] + 1;
+                    technologyA[4] = technologyA[4] + 1;
+                }
+                else{
+                    technologyA[4] = technologyA[4] + 1;
                 }
             }
         }
-        Toast.makeText(Report.this,number[0]+""+number[1]+""+number[2]+""+number[3]+""+number[4],Toast.LENGTH_SHORT).show();
-        peopleA = number;
-
-        processA = numberProc;
-
-        technologyA = numberTecno;
+        numberProc = processA;
+        numberTecno = technologyA;
+        numberPeop = peopleA;
         dataAnality();
     }
     private void dataAnality (){
@@ -157,7 +163,7 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
                 getProcess();
                 break;
             case R.id.rbTechnology:
-               // getTechnology();
+                getTechnology();
                 break;
             case R.id.btnExit:
                 finish();
@@ -168,14 +174,15 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
 
     private void getTechnology() {
         setValues(technologyA,name);
-        setUpPieChart("Tecnologia");
+        detail(2);
+        setUpPieChart("Tecnologias");
     }
 
 
     public void getProcess (){
-        float val[] = {30.4f,10.0f,8.9f,20.6f,13.7f};
-        String nom[] = {"Oficina","Mercadeo","Omnipresente","casa","puerta"};
-        setValues(val,nom);
+
+        setValues(processA,name);
+        detail(1);
         setUpPieChart("Procesos");
     }
 
@@ -232,15 +239,19 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
             public void onValueSelected(Entry e, Highlight h) {
                 int index = (int) h.getX();
                 if(topic == 0){
-                    p = (int)(totalPeople*peopleA[index])/100;
-                    Toast.makeText(Report.this,peopleA[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
+                    p = (int)(totalPeople*peopleA[index]);
+                    p = p /100;
+                    Toast.makeText(Report.this,numberPeop[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(Report.this,peopleA[0]+peopleA[1]+peopleA[2]+peopleA[3]+peopleA[4]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
                 }else if(topic == 1){
-                    p = (int)(totalProcess*processA[index])/100;
-                    Toast.makeText(Report.this,processA[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
+                    p = (int)(totalProcess*processA[index]);
+                    p = p /100;
+                    Toast.makeText(Report.this,numberProc[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
 
                 } else if(topic == 2){
-                    p = (int)(totalTecno*technologyA[index])/100;
-                    Toast.makeText(Report.this,technologyA[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
+                    p = (int)(totalTecno*technologyA[index]);
+                    p = p /100;
+                    Toast.makeText(Report.this,numberTecno[index]+" % "+"son : "+p+" respuestas",Toast.LENGTH_LONG).show();
                 }
 
             }

@@ -100,14 +100,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <ImageButton
                         android:id="@+id/button"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/home"
+                        android:background="@drawable/home1"
                         android:backgroundTint="@android:color/darker_gray"
                         android:text="Button" />
 
@@ -116,8 +116,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/door"
-                        android:backgroundTint="@android:color/darker_gray"
+                        android:background="@drawable/exit1"
                         android:text="Button" />
 
                 </LinearLayout>

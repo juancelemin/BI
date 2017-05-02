@@ -76,6 +76,8 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
 
 
         getQuestions();
+        hablar(currentQuestion.getStatement());
+
 
 
     }
@@ -196,6 +198,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
     private  Answer makeAnswer (String ans){
 
         String parts [] = ans.split(",,");
+
         Answer answer = new Answer(parts[0],parts[1]);
         //txtQuestion.setText(parts[1]);
         //answer.setDescription();
@@ -204,7 +207,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
     }
 
     private void showQuestion (Question newQuestion){
-
+        hablar(newQuestion.getStatement());
         txtQuestion.setText(newQuestion.getStatement());
         btnA.setText(newQuestion.getAns1().getDescription());
         btnB.setText(newQuestion.getAns2().getDescription());
@@ -212,6 +215,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
         btnD.setText(newQuestion.getAns4().getDescription());
         btnE.setText(newQuestion.getAns5().getDescription());
         btnF.setText(newQuestion.getAns6().getDescription());
+
 
     }
     public void getQuestions (){
@@ -238,15 +242,18 @@ public class Game extends AppCompatActivity implements View.OnClickListener, Tex
             nextQuestion = question.get(nQuestion);
             showQuestion(nextQuestion);
             currentQuestion = nextQuestion;
+
         }else {
             sendData();
         }
 
     }
     public void hablar (String p){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            tts.speak(p, TextToSpeech.QUEUE_FLUSH, null, null);
 
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            tts.speak(p, TextToSpeech.QUEUE_FLUSH, null, null);
             //Toast.makeText(this, "5.0", Toast.LENGTH_SHORT).show();
         }
         else {
